@@ -11,10 +11,11 @@ header {
 header > h1 {
 
     margin: 0%;
-    margin-left: 45%;
+    margin-left: 3%;
     top: 50%;
     color: orange;
     order: 1;
+    font-size: 200px;
 
 }
 
@@ -25,15 +26,51 @@ header > p {
     order: -1;
     text-transform: uppercase;
     color: pink;
+    font-size: 30px;
 
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    align-items: start;
+}
+
+main > section {
+    grid-column: 2;
+    /* grid-row: 1; */
+     font-size: 20px;
 }
 
 main > aside:first-of-type {
-    order: -1;
-    margin: 0 0 20px 0;
+    grid-column: 1;
+    grid-row: 1 / span 4;
 }
+
+main > aside:last-of-type {
+     grid-column: 1;
+    margin-top: -10px;
+} 
+
+ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+ img {
+    width: 710px;
+    height: 1144px;
+}  
+
+main h2,
+main h3,
+main p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
