@@ -16,6 +16,8 @@ header > h1 {
     color: orange;
     order: 1;
     font-size: 200px;
+    padding-bottom: 3%;
+    padding-top: 3%;
 
 }
 
@@ -40,7 +42,11 @@ main {
 main > section {
     grid-column: 2;
     /* grid-row: 1; */
-    font-size: 30px;
+    font-size: 25px;
+}
+
+main > section ol {
+    padding-left: 100px;  
 }
 
 main > aside:first-of-type {
@@ -52,21 +58,31 @@ main > aside:first-of-type {
 main > aside:last-of-type {
     grid-column: 1;
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 21.5%;
-    border: 2px solid black; 
-    width: 480px; 
-    height: 400px;
-    padding: 50px;             
+    border: 2px solid orange; 
+    width: 545px; 
+    height: 460px;
+    padding-left: 15px; 
+    padding-right: 15px;    
+    padding-top: 40px;        
     background-color: white;
     position: absolute;
-    top: 142%;
-    left: -15%;
+    top: 127%;
+    left: -17%;
     
-    p{
-        text-align: center;
-    }
 } 
+
+main > aside:last-of-type ol {
+    padding-left: 50px;   
+    padding-bottom: 6px;
+}
+
+main > aside:last-of-type li {
+    text-align: left;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
 
 ol {
     padding-left: 20px;
@@ -74,8 +90,8 @@ ol {
 }
 
  img {
-    width: 710px;
-    height: 1144px;
+    width: 610px;
+    height: 944px;
 }  
 
 main h2,
