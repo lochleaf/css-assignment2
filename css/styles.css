@@ -40,17 +40,29 @@ main {
 main > section {
     grid-column: 2;
     /* grid-row: 1; */
-     font-size: 20px;
+    font-size: 20px;
 }
 
 main > aside:first-of-type {
     grid-column: 1;
     grid-row: 1 / span 4;
+    font-size: 20px;
 }
 
 main > aside:last-of-type {
-     grid-column: 1;
+    grid-column: 1;
     margin-top: -10px;
+    font-size: 20px;
+    margin-left: 21.5%;
+    border: 2px solid black; 
+    width: 480px; 
+    height: 400px;
+    padding: 50px;             
+    background-color: white;
+    
+    p{
+        text-align: center;
+    }
 } 
 
 ol {
