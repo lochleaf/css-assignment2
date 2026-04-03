@@ -1,129 +1,194 @@
 @charset "UTF-8";
 
+/* google font Gelasio */
 @font-face {
     font-family: 'Gelasio';
     src: url("../static/Gelasio-Regular.ttf");
 }
 
+/* this helps with order of the header titles */
 header {
     display: flex;
     flex-direction: column;
     
 }
 
+/* Main title inside header */
 header > h1 {
 
-    margin: 0%;
+    /* this is to center the title */
     margin-left: 1.5%;
-    top: 50%;
+
+    /* color of the font */
     color: orange;
+
+    /* helps to place the title lower */
     order: 1;
+
+    /* font size */
     font-size: 200px;
+
+    /* giving space between the bottom of the title */
     padding-bottom: 3%;
+
+    /* giving space between the top of the title */
     padding-top: 3%;
+
+    /* font family */
     font-family: Gelasio;
 
 }
 
+/* smaller title at the top */
 header > p {
 
-    margin: 0%;
+    /* this help place the text to where I want it to be */
     margin-left: 3.5%;
+
+    /* move it to top */
     order: -1;
+
+    /* make it all letters uppercase */
     text-transform: uppercase;
+
+    /* font color */
     color: black;
+
+    /* font size */
     font-size: 30px;
+
+    /* giving space from the top of the title */
     padding-top: 15px;
 
 }
 
+/* main layout */
 main {
-    display: grid;
+
+    /* use css grid */
+    display: grid; 
+
+    /* both sides of the grid */
     grid-template-columns: 1fr 2fr; 
+
+    /* Space between colums */
     gap: 20px; 
+
+    /* align items to top */
     align-items: start;
     
 }
 
+/* main for all content */
 main > section {
+
+    /* Place in second column */
     grid-column: 2;
-    /* grid-row: 1; */
     font-size: 25px;
 }
 
+/* list inside sections */
 main > section ol {
+
+    /* Indent text */
     padding-left: 100px; 
 }
 
+/* first aside to left column with all the lists live well, style, health */
 main > aside:first-of-type {
+
+    /* Left column */
     grid-column: 1;
+
+    /* Span multiple rows */
     grid-row: 1 / span 4;
     font-size: 20px;
     
 }
 
+/* second aside style box to the right on our cover */
 main > aside:last-of-type {
-    grid-column: 1;
+
+    /* Pull upward */
     margin-top: -10px;
     font-size: 25px;
     margin-left: 21.5%;
+
+    /* Orange border */
     border: 2px solid orange; 
     width: 545px; 
     height: 460px;
+
+    /* makes it fit better in the border */
     padding-left: 15px; 
     padding-right: 15px;    
     padding-top: 40px;        
     background-color: white;
+
+    /* I position it accuratly where it needed to be */
     position: absolute;
     top: 139%;
     left: -17%;
     
 } 
 
+/* List inside second aside */
 main > aside:last-of-type ol {
     padding-left: 50px;   
     padding-bottom: 6px;
 }
 
+/* List items inside second aside */
 main > aside:last-of-type li {
     text-align: left;
     margin-bottom: 8px;
     line-height: 1.4;
 }
 
+/* Font change for text in lists */
 ol {
-    padding-left: 20px;
-    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-footer{
+/* Footer styling */
+footer {
+
+    /* makes letters uppercase */
     text-transform: uppercase;
     padding-bottom: 10px;
     font-size: 20px;
     position: absolute;
     left: 73.5%;
-
-    em{
-        color: orange;
-    }
-
-    strong{
-        font-size: 25px;
-        padding-left: 12px;
-    }
 }
 
+/* Footer em styling */
+footer em{
+
+    color: orange;
+
+}
+
+/* Footer strong styling */
+footer strong{
+
+    font-size: 25px;
+    padding-left: 12px;
+}
+
+/* sections titles size */
 h2 {
 
     font-size: 50px;
 }
 
+/* first section styling "live well" */
 main > section:nth-of-type(1){
 
+    /* boder top solid line color green */
     border-top: 10px solid rgb(30, 170, 30);
     width: 1000px;
 
+    /* first section important text colored green */
     h3{
         color: rgb(30, 170, 30);
         text-transform: uppercase;
@@ -131,11 +196,14 @@ main > section:nth-of-type(1){
 
 }
 
+/* Second section styling "Style" */
 main > section:nth-of-type(2){
 
+    /* boder top solid line color red */
     border-top: 10px solid rgb(218, 44, 102);
     width: 1000px;
 
+    /* second section important text colored red */
     h3{
         color: rgb(218, 44, 102);
         text-transform: uppercase;
@@ -143,11 +211,14 @@ main > section:nth-of-type(2){
 
 }
 
+/* third section styling "Health" */
 main > section:nth-of-type(3){
 
+    /* boder top solid line color blue */
     border-top: 10px solid rgb(48, 144, 173);
     width: 1000px;
 
+    /* third section important text colored blue */
     h3{
         color: rgb(48, 144, 173);;
         text-transform: uppercase;
@@ -155,6 +226,7 @@ main > section:nth-of-type(3){
 
 }
 
+/* Figcaption first text with large num 31 style */
 figcaption > p:nth-of-type(1) {
 
     padding: 80px;
@@ -164,6 +236,7 @@ figcaption > p:nth-of-type(1) {
     top: 105%;
     line-height: 100%;
 
+    /* large num 31 size and making it normal */
     em{
 
         font-size: 150px;
@@ -172,6 +245,7 @@ figcaption > p:nth-of-type(1) {
      
 }
 
+/* Figcaption second text with rotate text */
 figcaption > p:nth-of-type(2) {
 
     position: absolute;

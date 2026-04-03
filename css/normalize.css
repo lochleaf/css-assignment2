@@ -1,26 +1,51 @@
 @charset "UTF-8";
 
+/* Apply default font to entire page */
 html{
 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Remove default spacing */
+/* header first title margin default */
+header > h1 {
+
+    /* Remove default margin */
+    margin: 0%; 
+}
+
+/* header second title margin default */
+header > p {
+
+    /* Remove default margin */
+    margin: 0%;
+
+}
+
+
+/* Remove default spacing for body */
 body {
 
     margin: 0;
     padding: 0;
 }
 
+/* image size */
 img {
 
     width: 610px;
     height: 944px;
 }  
 
+/* text element spacing inside main */
 main h2,
 main h3,
 main p {
 
+    /* Small vertical spacing, no horizontal margin */
     margin: 5px 0;
+}
+
+/* ordered list reset */
+ol {
+    margin: 0;
 }
