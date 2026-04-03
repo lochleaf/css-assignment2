@@ -41,7 +41,7 @@ figcaption > p:nth-of-type(1) {
 figcaption > p:nth-of-type(2) {
 
     position: absolute;
-    top: 166%;
+    top: 168%;
     left: -1%;
     transform: rotate(-90deg);
     

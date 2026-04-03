@@ -27,8 +27,9 @@ header > p {
     margin-left: 10%;
     order: -1;
     text-transform: uppercase;
-    color: pink;
+    color: black;
     font-size: 30px;
+    padding-top: 15px;
 
 }
 
@@ -37,6 +38,7 @@ main {
     grid-template-columns: 1fr 2fr; 
     gap: 20px; 
     align-items: start;
+    
 }
 
 main > section {
@@ -46,13 +48,14 @@ main > section {
 }
 
 main > section ol {
-    padding-left: 100px;  
+    padding-left: 100px; 
 }
 
 main > aside:first-of-type {
     grid-column: 1;
     grid-row: 1 / span 4;
     font-size: 20px;
+    
 }
 
 main > aside:last-of-type {
@@ -68,7 +71,7 @@ main > aside:last-of-type {
     padding-top: 40px;        
     background-color: white;
     position: absolute;
-    top: 127%;
+    top: 129%;
     left: -17%;
     
 } 
@@ -100,7 +103,22 @@ main p {
     margin: 5px 0;
 }
 
+footer{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 20px;
+    position: absolute;
+    left: 73.5%;
 
+    em{
+        color: orange;
+    }
+
+    strong{
+        font-size: 25px;
+        padding-left: 12px;
+    }
+}
 
 
 
