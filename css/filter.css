@@ -1,0 +1,4 @@
+main > aside:last-of-type {
+    /* STEP 4: drop-shadow() */
+    filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.233));
+}

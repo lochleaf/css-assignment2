@@ -1,23 +1,27 @@
 @charset "UTF-8";
-html {
 
+@font-face {
+    font-family: 'Gelasio';
+    src: url("../static/Gelasio-Regular.ttf");
 }
 
 header {
     display: flex;
     flex-direction: column;
+    
 }
 
 header > h1 {
 
     margin: 0%;
-    margin-left: 3%;
+    margin-left: 1.5%;
     top: 50%;
     color: orange;
     order: 1;
     font-size: 200px;
     padding-bottom: 3%;
     padding-top: 3%;
+    font-family: Gelasio;
 
 }
 
@@ -71,7 +75,7 @@ main > aside:last-of-type {
     padding-top: 40px;        
     background-color: white;
     position: absolute;
-    top: 132%;
+    top: 139%;
     left: -17%;
     
 } 
@@ -90,6 +94,7 @@ main > aside:last-of-type li {
 ol {
     padding-left: 20px;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
  img {
