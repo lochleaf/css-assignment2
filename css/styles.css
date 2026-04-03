@@ -24,7 +24,7 @@ header > h1 {
 header > p {
 
     margin: 0%;
-    margin-left: 10%;
+    margin-left: 3.5%;
     order: -1;
     text-transform: uppercase;
     color: black;
@@ -71,7 +71,7 @@ main > aside:last-of-type {
     padding-top: 40px;        
     background-color: white;
     position: absolute;
-    top: 129%;
+    top: 132%;
     left: -17%;
     
 } 
@@ -120,6 +120,9 @@ footer{
     }
 }
 
+h2 {
 
+    font-size: 50px;
+}
 
 
