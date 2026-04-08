@@ -1,1 +1,1 @@
-hello
+css Magazine layout
